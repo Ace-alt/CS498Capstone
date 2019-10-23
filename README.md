@@ -1,6 +1,6 @@
 # CS498Capstone
 Alana Allbritton's CS Capstone Repository
-This repository contains the following:
+This repository contains the following: n/
 Diagrams: Visual representations of application structures for project
 Mockups: Visual designs of the application's user interface
 Images and Resources: various files that may be used for reference or within the application
