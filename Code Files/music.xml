@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/backtogameSelectButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Back"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/musicbox"
+        android:layout_width="405dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border" />
+
+
+    <Button
+        android:id="@+id/noteA"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/musicbox"
+        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
+        android:text="A"
+        android:onClick="playSound"/>
+
+    <Button
+        android:id="@+id/noteB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/musicbox"
+        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/noteA"
+        android:text="B"
+        android:onClick="playSound"/>
+
+    <Button
+        android:id="@+id/noteC"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/musicbox"
+        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/noteB"
+        android:text="C"
+        android:onClick="playSound"
+        />
+
+    <Button
+        android:id="@+id/noteD"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteA"
+        android:text="D"
+        android:onClick="playSound"/>
+
+    <Button
+        android:id="@+id/noteE"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteB"
+        android:layout_toRightOf="@id/noteD"
+        android:text="E"
+        android:onClick="playSound"/>
+
+    <Button
+        android:id="@+id/noteF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteC"
+        android:layout_toRightOf="@id/noteE"
+        android:text="F"
+        android:onClick="playSound"/>
+
+    <Button
+        android:id="@+id/noteG"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteE"
+        android:layout_toRightOf="@id/noteD"
+        android:text="G"
+        android:onClick="playSound"/>
+
+
+    <Button
+        android:id="@+id/beat1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/noteC"
+        android:layout_below="@id/musicbox"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="425dp"
+        android:text="1"
+        />
+
+    <Button
+        android:id="@+id/beat2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/beat1"
+        android:layout_below="@id/musicbox"
+        android:layout_marginTop="15dp"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/beat3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/noteC"
+        android:layout_below="@id/beat1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="425dp"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/beat4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/beat3"
+        android:layout_below="@id/beat2"
+        android:layout_marginTop="15dp"
+        android:text="4" />
+
+
+
+</RelativeLayout>

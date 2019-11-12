@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/backtogameSelectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Back"
+        />
+
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="269dp"
+        android:layout_height="190dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/border"
+        android:src="@drawable/questionmark" />
+
+    <TextView
+        android:id="@+id/questionbox"
+        android:layout_width="405dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="57dp"
+        android:layout_toRightOf="@id/questionImage"
+        android:background="@drawable/border"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/choiceB"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/questionbox"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/choiceA"
+        android:text="B" />
+
+    <Button
+        android:id="@+id/choiceA"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/questionImage"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="A" />
+
+    <Button
+        android:id="@+id/choiceC"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/choiceA"
+        android:layout_marginBottom="15dp"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/choiceD"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/choiceB"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/choiceC"
+        android:text="D" />
+
+
+    <TextView
+        android:id="@+id/scorebox"
+        android:layout_width="145dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/questionbox"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="392dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="19dp"
+        android:layout_toRightOf="@id/choiceA"
+        android:background="@drawable/border"
+        android:text="Score: 0"/>
+
+
+</RelativeLayout>

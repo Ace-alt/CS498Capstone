@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/GameSelectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:text="Choose a Game"
+        android:textColor="#252424"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gameBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Back"
+        />
+
+
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/gameBackButton"
+        android:layout_margin="50dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="20dp"
+        android:text="Quiz" />
+
+    <Button
+        android:id="@+id/musicButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/quizButton"
+        android:layout_margin="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="20dp"
+        android:text="Music" />
+
+    <TextView
+        android:id="@+id/gameDescription"
+        android:layout_width="373dp"
+        android:layout_height="135dp"
+        android:layout_below="@id/GameSelectionTitle"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="53dp"
+        android:background="@drawable/border"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gameStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameDescription"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginRight="161dp"
+        android:text="Start!" />
+
+
+</RelativeLayout>
