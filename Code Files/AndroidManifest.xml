@@ -9,22 +9,44 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="sensorLandscape"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LesSelectActivity" />
-        <activity android:name=".GameSelectActivity" />
-        <activity android:name=".LessonActivity" />
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".MusicActivity" />
+
+        <activity android:name=".LesSelectActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".GameSelectActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".LessonActivity1"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".LessonActivity2"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".LessonActivity3"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".LessonActivity4"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".LessonActivity5"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".QuizActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".MusicActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
