@@ -13,60 +13,61 @@ public class GameSelectActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_selection);
+        final TextView gameDescription = findViewById(R.id.gameDescription);
 
-        //Buttons
+        //Button List
+        final Button back = (Button) findViewById(R.id.gameBackButton);
+        final Button quiz = (Button) findViewById(R.id.quizButton);
+        final Button music = (Button) findViewById(R.id.musicButton);
+        final Button start = (Button) findViewById(R.id.gameStartButton);
+
         //Back to Home Button
-        Button back = (Button) findViewById(R.id.gameBackButton);
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent backIntent = new Intent(view.getContext(), MainActivity.class);
-                startActivityForResult(backIntent, 0);
+                finish();
             }
 
         });
 
 
-        final TextView musicGameDescription = findViewById(R.id.gameDescription);
         //Quiz Button
-        Button quiz = (Button) findViewById(R.id.quizButton);
         quiz.setOnClickListener(new View.OnClickListener() {
-            int counter=0;
             public void onClick(View view) {
-                musicGameDescription.setText("Play the Quiz!");
-                counter++;
-                //if clicked twice, goes to game
-                if(counter==2){
-                    Intent quizIntent = new Intent(view.getContext(), QuizActivity.class);
-                    startActivityForResult(quizIntent, 0);
-                    counter=0;
-                }
+                music.setEnabled(false);
+                start.setEnabled(true);
+                gameDescription.setText(R.string.quizDescript);
             }
 
         });
 
         //Music Button
-        final Button music = (Button) findViewById(R.id.musicButton);
         music.setOnClickListener(new View.OnClickListener() {
-            int counter = 0;
             public void onClick(View view) {
-                musicGameDescription.setText("Play the Music Game!");
-                counter++;
-                //If clicked twice, goes to game
-                if(counter==2){
-                    Intent musicIntent = new Intent(view.getContext(), MusicActivity.class);
-                    startActivityForResult(musicIntent, 0);
-                    counter=0;
-                }
+                quiz.setEnabled(false);
+                start.setEnabled(true);
+                gameDescription.setText(R.string.gameDescript);
+
             }
 
         });
 
-
         //Start Button
-        Button start = (Button) findViewById(R.id.gameStartButton);
+        //starts deactivated. Only activated my music or quiz
+        start.setEnabled(false);
         start.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //will fix later
+                if(music.isEnabled()){
+                    Intent musicIntent = new Intent(view.getContext(), MusicActivity.class);
+                    startActivityForResult(musicIntent, 0);
+                    start.setEnabled(false);
+                }
+                if(quiz.isEnabled()){
+                    Intent quizIntent = new Intent(view.getContext(), QuizActivity.class);
+                    startActivityForResult(quizIntent, 0);
+                    start.setEnabled(false);
+                }
+                quiz.setEnabled(true);
+                music.setEnabled(true);
             }
 
         });

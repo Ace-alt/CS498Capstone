@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">YesWeCodeProject</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="lessonsList">
+    <item>What is Coding?</item>
+    <item>Variables</item>
+    <item>If Else Statements</item>
+    <item>Loops</item>
+    <item>Methods</item>
+    </string-array>
+
+    <string name="lessonDescript1">\n How we speak to computers using language</string>
+    <string name="lessonDescript2">\n How to give objects value and meaning through code</string>
+    <string name="lessonDescript3">\n True or False: Can we check for changes in variables?</string>
+    <string name="lessonDescript4">\n Let the computer make changes for you!</string>
+    <string name="lessonDescript5">\n Let\'s combine everything we\'ve learned!</string>
+    <string name="musichelp">\n Tap on a note to hear its sound. Place only one note or one beat in each box from left to right. Don\'t skip over boxes. If you\'ve made a mistake, press the clear button.</string>
+
+    <string name="quizDescript">\n Put your newfound knowledge to the test with these questions!</string>
+    <string name="gameDescript">\n Drag letters and numbers in the corresponding rows to make your own music!</string>
+
+    <string-array name="lesson1">
+        <item>\n Welcome to Yes We Code! A small app to help you learn the basics of coding.</item>
+        <item>\n Let’s jump right into it!</item>
+        <item>\n So what exactly is coding? Think of it this way.</item>
+        <item>\n People around the world communicate in different languages: English, Spanish, Chinese… </item>
+        <item>\n Well think of a computer as a person who can read different languages. Just like how I’m talking to you in English, you could talk to a computer in the language Java, Python, or so many more!</item>
+        <item>\n Writing in a computer’s language is coding. Telling a computer to complete tasks through coding is called programming.</item>
+        <item>\n The more computer languages that you learn, the more devices you can talk to. Smartphones, gaming consoles, and even some watches can do amazing things if you tell them to through programming!</item>
+        <item>\n The following lessons will guide you through some similarities between our human languages and a computer’s.</item>
+        <item>\n End of Lesson One! Click the “Back” button to access another lesson.</item>
+    </string-array>
+
+    <string-array name="lesson2">
+        <item>\n Question: What’s a computer’s favorite school subject?</item>
+        <item>\n It’s math! Computers love math so much, that numbers and symbols often used in your various math classes are in many of their languages!</item>
+        <item>\n A variable in its simplest form is an item you give a value.</item>
+        <item>\n For an example: An apple at the store worth $1. To tell the computer this, you would write something like shown on the board.</item>
+        <item>\n The apple is the variable, “1” is its value.</item>
+        <item>\n The “;” at the end tells the computer you\'re done with your statement. Think of it like the “.” at the end of a sentence.</item>
+        <item>\n “price” would tell the computer that the “1” represents 1 dollar.</item>
+        <item>\n Here are few more examples.</item>
+        <item>\n End of Lesson Two! Click the “Back” button to access another lesson.</item>
+    </string-array>
+
+    <string-array name="lesson3">
+        <item>\n Many computer languages use various English words. Some are: “return”, “string”, “main”, and “root”.</item>
+        <item>\n This lesson will go over the words: “True” “False” “If” “Else”</item>
+        <item>\n Let’s say you told somebody that it’s raining outside. If it is raining outside, then what you said is “true.” If it’s not raining, your statement is “false”. How could we write this in a computer’s language?</item>
+        <item>\n Look at the chalkboard. First, we have the variable “rain” with the value “true.”</item>
+        <item>\n Next, we have “If rain.” Because rain = true, the computer will respond with “It’s raining!”</item>
+        <item>\n But what if we change raining’s value to “false” ?</item>
+        <item>\n The computer will then follow the command written under the “else”. This tells us that commands under “else” will only be followed if what’s written next to “if” is not true.</item>
+        <item>\n End of Lesson Three! Click the “Back” button to access another lesson.</item>
+    </string-array>
+
+    <string-array name="lesson4">
+        <item>\n Time for some geometry! Try and draw a circle. If you’re like most people, you probably started your circle where it ended, making a loop. Computers like loops too!</item>
+        <item>\n Loops in a computer’s languages are commands that repeat themselves in a format seen above.</item>
+        <item>\n We start off with 3 eggs. Like we learned with “if”, what is written after “while” must be true in order for the command to be followed below.</item>
+        <item>\n Within the “{  }” we have two commands: to write that we still have eggs and to subtract one from our egg variable. That would change our value from 3 to 2.</item>
+        <item>\n These statements will repeat themselves until eggs = 0, because then “eggs > 0” would no longer be true.</item>
+        <item>\n End of Lesson Four! Click the “Back” button to access another lesson.</item>
+    </string-array>
+
+    <string-array name="lesson5">
+        <item>\n Think of methods like a paragraph. Loops, If and Else statements are sentences. Variables would be the words.</item>
+        <item>\n Methods can contain multiple variables, loops, commands, and more. We will present a simple example using the basics from the previous lessons.</item>
+        <item>\n The name of this method is “Example.”  “Public,” “Void,” and “()” help us characterize what type of method is being presented. You will learn more about this later in your coding education.</item>
+        <item>\n Everything within the first “{ ” and last “}” are all a part of the method. So when you tell a computer to look at "Example", everything in between is what it will read.</item>
+        <item>\n Here we see a an if and else statement within a loop. The same logic from the past lessons apply here.</item>
+        <item>\n We start off with 1 apple. Since apples = 1 is true at the moment, the computer will write “only one apple!” and skip the else command.</item>
+        <item>\n At the end of each loop we are going to add one apple. Now apple = 2. Since that command is outside of the if and else statements, it will be repeat as along as apples is less than 5.</item>
+        <item>\n On every loop onwards, we will write “we have plenty of apples!” until apples = 5.</item>
+        <item>\n End of Lesson Five! Click the “Back” button to access another lesson.</item>
+    </string-array>
+
+</resources>

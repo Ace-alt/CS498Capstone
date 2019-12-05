@@ -3,18 +3,22 @@ package com.example.andriod.yeswecodeproject;
 public class Questions {
 
     private String Questions []={
-            "Test 1: The Answer is A!",
-            "Test 2: The Answer is B!",
-            "Test 3: The Answer is C!"
+            "Which value best fits this variable?",
+            "When will this loop stop? At:",
+            "How many times will the else statement be true?",
+            "What type of statements are in this method?",
+            "Which of these languages are a computer language?"
     };
 
     private String Answers[][]={
-            {"A:These","B:Variables","C:Can","D:Change"},
-            {"A:what","B: a","C:Great","D:Test!"},
-            {"A:It's","B:really","C:working","D:Now!"}
+            {"0","False","Science","Blue"},
+            {"x = 2","x = 3","x = 4","x = 5"},
+            {"Never","Once","Twice","3 Times"},
+            {"If/Else Only","Loop Only","No Statement","If/Else & Loop"},
+            {"C++", "Python", "Java", "All of the Above"}
     };
 
-    private String Solutions[]={"A:These","B: a","C:working"};
+    private String Solutions[]={"Science","x = 4","Never","If/Else & Loop","All of the Above"};
 
     public String getQuestion(int a){
         String question = Questions[a];

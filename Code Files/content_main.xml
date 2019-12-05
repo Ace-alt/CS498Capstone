@@ -2,7 +2,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C4FF3B"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/LessonButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Lessons"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/GamesButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LessonButton"
+        android:layout_centerInParent="true"
+        android:text="Games"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/QuitButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Quit"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/InfoButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Info"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/Title"
@@ -13,33 +49,16 @@
         android:fontFamily="monospace"
         android:text="Yes We Code!"
         android:textColor="#252424"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/LessonButton"
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Lessons" />
-
-    <Button
-        android:id="@+id/GamesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/LessonButton"
-        android:text="Games" />
-
-    <Button
-        android:id="@+id/QuitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:text="Quit" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-270dp"
+        android:layout_toRightOf="@id/Title"
+        android:src="@drawable/teacherwave" />
 
 
 </RelativeLayout>

@@ -1,15 +1,12 @@
 package com.example.andriod.yeswecodeproject;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +35,30 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        //Info Button
+        Button info = (Button) findViewById(R.id.InfoButton);
+        info.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Context context = getApplicationContext();
+                CharSequence text ="CS Capstone Project by Alana Allbritton";
+                int duration = Toast.LENGTH_LONG;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+
+        });
+
+        //Quit Button
+        Button quit = (Button) findViewById(R.id.QuitButton);
+        quit.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                System.exit(0);
+            }
+
+        });
+
+
 
     }
 
